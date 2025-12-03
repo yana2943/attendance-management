@@ -1,0 +1,103 @@
+.content-title {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.content-title::before {
+    content: '';
+    position: absolute;
+    left: 240px;
+    width: 10px;
+    height: 40px;
+    background-color: #000;
+}
+
+.content-title h2 {
+    margin-left: calc(240px + 10px + 12px);
+}
+
+.list-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+}
+
+.month-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.month-display {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.month-nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.month-arrow {
+    width: 20px;
+    height: 15px;
+}
+
+.month-text {
+    font-size: 16px;
+}
+
+.attendance-table {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    overflow-x: auto;
+}
+
+.attendance-table table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.attendance-table th,
+.attendance-table td {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 8px;
+    word-wrap: break-word;
+}
+
+.csv-export {
+    margin-top: -40px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+}
+
+.csv-button {
+    display: inline-block;
+    width: 120px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-bottom: 60px;
+}

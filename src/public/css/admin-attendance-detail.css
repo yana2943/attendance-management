@@ -1,0 +1,112 @@
+.content-title {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.content-title::before {
+    content: '';
+    position: absolute;
+    left: 240px;
+    width: 10px;
+    height: 40px;
+    background-color: #000;
+}
+
+.content-title h2 {
+    margin-left: calc(240px + 10px + 12px);
+}
+
+.attendance-detail {
+    margin-left: 240px;
+    margin-top: 40px;
+    text-align: left;
+    display: block;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    width: 900px;
+}
+
+.detail-item .label {
+    width: 150px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.detail-item .value {
+    display: inline-block;
+    width: 320px;
+    margin-left: 100px;
+    text-align: left;
+}
+
+.time-input-group {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    gap: 10px;
+}
+
+.time-input-group input[type="text"] {
+    width: 120px;
+    padding: 6px 8px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0;
+}
+
+.time-input-group .middle-symbol {
+    width: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.detail-item textarea {
+    width: 320px;
+    height: 80px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    margin-left: 100px;
+    text-align: left;
+}
+
+.form-error {
+    font-size: 13px;
+    margin-top: 4px;
+    text-align: left;
+    color: red !important;
+    margin-left: 260px;
+}
+
+.border {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+    width: 900px;
+    box-sizing: border-box;
+}
+
+.detail-actions {
+    width: 570px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px 0 80px 300px;
+}
+
+
+.edit-button {
+    width: 130px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}

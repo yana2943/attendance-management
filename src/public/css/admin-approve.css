@@ -1,0 +1,61 @@
+.content-title {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.content-title::before {
+    content: '';
+    position: absolute;
+    left: 240px;
+    width: 10px;
+    height: 40px;
+    background-color: #000;
+}
+
+.content-title h2 {
+    margin-left: calc(240px + 10px + 12px);
+}
+
+.attendance-detail {
+    margin-left: 240px;
+    width: 900px;
+    text-align: left
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.detail-item .label {
+    width: 100px;
+    font-weight: bold;
+}
+
+.detail-item .value {
+    display: inline-block;
+    width: 320px;
+    margin-left: 100px;
+    text-align: left;
+}
+
+.detail-actions {
+    width: 900px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px auto 0;
+}
+
+.approve-button {
+    width: 120px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}

@@ -1,0 +1,37 @@
+.header {
+    background-color: #000;
+}
+
+.header__inner {
+    padding: 20px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content-sentence {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form__button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.mailhog-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #d9d9d9;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.resend-link {
+    text-decoration: none;
+}

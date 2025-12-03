@@ -1,0 +1,45 @@
+.content-title {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.content-title::before {
+    content: '';
+    position: absolute;
+    left: 240px;
+    width: 10px;
+    height: 40px;
+    background-color: #000;
+}
+
+.content-title h2 {
+    margin-left: calc(240px + 10px + 12px);
+}
+
+.staff-list {
+    margin-left: 240px;
+    margin-top: 40px;
+    text-align: left;
+    display: block;
+}
+
+.staff-table {
+    width: 900px;
+    margin: 40px 0 100px 0;
+    overflow-x: auto;
+}
+
+.staff-table table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.staff-table th,
+.staff-table td {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 8px;
+    word-wrap: break-word;
+}
