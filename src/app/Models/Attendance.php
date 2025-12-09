@@ -76,6 +76,7 @@ class Attendance extends Model
     public function getStatusLabelAttribute()
     {
         return match($this->approval_status) {
+            '未承認' => '未承認',
             '承認待ち' => '承認待ち',
             '承認済' => '承認済',
             default => '-',

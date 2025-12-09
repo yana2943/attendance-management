@@ -18,7 +18,7 @@ class AttendanceController extends Controller
 
         $attendance = Attendance::firstOrCreate(
             ['user_id' => $user->id, 'work_date' => $today],
-            ['user_status' => '勤務外', 'approval_status' => '承認待ち']
+            ['user_status' => '勤務外', 'approval_status' => '未承認']
         );
 
         return view('attendance', ['attendance' => $attendance, 'status' => $attendance->user_status,]);
@@ -31,7 +31,7 @@ class AttendanceController extends Controller
 
         $attendance = Attendance::firstOrCreate(
             ['user_id' => $user->id, 'work_date' => $today],
-            ['user_status' => '勤務外', 'approval_status' => '承認待ち']
+            ['user_status' => '勤務外', 'approval_status' => '未承認']
         );
 
         if ($attendance->user_status === '勤務外') {
@@ -103,7 +103,7 @@ class AttendanceController extends Controller
                     'user_id' => $user->id,
                     'work_date' => $date,
                     'user_status' => '勤務外',
-                    'approval_status' => '承認待ち',
+                    'approval_status' => '未承認',
                 ]);
                 $attendance->is_fake = true;
             } else {
@@ -139,7 +139,7 @@ class AttendanceController extends Controller
                     'user_id' => $userId,
                     'work_date' => $id,
                     'user_status' => '勤務外',
-                    'approval_status' => '承認待ち',
+                    'approval_status' => '未承認',
                 ]);
                 $attendance->is_fake = true;
             } else {
