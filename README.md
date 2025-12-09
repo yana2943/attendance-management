@@ -45,6 +45,7 @@ MAIL_FROM_NAME="${APP_NAME}"
 ##　テストユーザー
 
 ・テスト用のユーザー以下の通りです。
+
 名前：テスト　１
 メールアドレス：123@456.com
 パスワード：password
@@ -52,3 +53,7 @@ MAIL_FROM_NAME="${APP_NAME}"
 名前：テスト　２
 メールアドレス：456@123.com
 パスワード：password
+
+名前：管理者
+メールアドレス：kanri@aaa.com
+パスワード：kanripass
